@@ -1,6 +1,10 @@
-let text = prompt("Nhập câu");
-
-alert(text);
+let string = prompt("Mời nhập chuỗi bất kì").trim();
+let newString = string.split(/\s+/);
+let text ="";
+for (let i = 0; i < newString.length; i++) {
+    text += newString[i].charAt(0).toUpperCase() + newString[i].slice(1) + " ";
+}
+alert(text.trim());
 
 
 
